@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Volt AI | Admin</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="admin-page">
+    <div class="admin-container">
+        <div class="admin-header">
+            <div class="logo">
+                <i class="fas fa-bolt"></i>
+                <h1>Volt AI Admin</h1>
+            </div>
+            <button id="adminLogoutBtn" class="btn-logout">
+                <i class="fas fa-sign-out-alt"></i> Logout
+            </button>
+        </div>
+        
+        <div class="admin-stats">
+            <div class="stat-card">
+                <h3>Total Users</h3>
+                <p id="totalUsers">0</p>
+            </div>
+            <div class="stat-card">
+                <h3>Active Users</h3>
+                <p id="activeUsers">0</p>
+            </div>
+            <div class="stat-card">
+                <h3>Inactive Users</h3>
+                <p id="inactiveUsers">0</p>
+            </div>
+        </div>
+        
+        <div class="admin-table-container">
+            <div class="table-header">
+                <h2>User Management</h2>
+                <div class="search-box">
+                    <input type="text" id="searchUsers" placeholder="Search users...">
+                    <i class="fas fa-search"></i>
+                </div>
+            </div>
+            
+            <table id="usersTable">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Username</th>
+                        <th>Email</th>
+                        <th>Joined</th>
+                        <th>Status</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Users will be loaded here -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="/js/admin.js"></script>
+</body>
+</html>
